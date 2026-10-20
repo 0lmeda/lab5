@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panda-awards</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+
+
+        <div class="nav">
+            <button>X</button>
+            <h1>EARN POINTS</h1>
+        </div>
+
+    </header>
+
+    <section class="instructions">
+        <h2>Forgot to scan?</h2>
+        <p>Don't worry, just submit the details from your receipt
+            to claim your points.
+        </p>
+        <p>
+            Check the sample receipt provided for guidance
+        </p>
+    </section>
+    <section class="formSection">
+        <form action="">
+            <fieldset>
+                <legend>Store Number</legend>
+                <input type="text" id="storeNum" name="storeN"  class="inputForm">
+
+            </fieldset>
+            <br>
+           
+
+            <fieldset>
+                <legend>date</legend>
+                <input type="date" id="dateInput" name="dateInput" class="inputForm"> 
+            </fieldset>
+            <span class="dateText">Receipts can only be redeemed within 7 days of purchase</span>
+
+    <br>
+            <fieldset>
+                <legend>order Number</legend>
+                <input type="text" id="orderNum" name="orderNum" required  class="inputForm">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>order Total</legend>
+                <input type="text" id="orderTotal" name="orderTotal"  class="inputForm">
+
+            </fieldset>
+
+            <br>
+            <br>
+            
+            <div class="experienceSection">
+                <label for="experience">How was your experience today?</label>
+
+            <div class="radioGroup">
+
+                <label><input type="radio" name="Exellent" value="1"> Exellent</label>
+                <label><input type="radio" name="Good" value="2"> Good</label>
+                <label><input type="radio" name="Average" value="3"> Average</label>
+                <label><input type="radio" name="Poor" value="3"> Poor</label>
+    
+            </div>  
+            </div>
+
+            <label for="feedback">Additional Feedback (optional)</label>
+            <textarea name="feedback" id="feedback" placeholder="Share any feedback or comments here..." maxlength="300"></textarea>
+            <br>
+
+            <div class="emailSignUp">
+                <input type="checkbox" name="signMe" id="signMe">
+
+                <label for="signMe">Sign me up for email updates</label>
+                <br>
+                <span>Receive the latest news, offers, and more</span>
+            </div>
+            
+
+            <input type="submit" value="Submit" class="submitBtn">
+            <p class="additionalInfo">*Points will be awarded based on your total prior to tax</p>
+        </form>
+    </section>
+
+    <section class="sampleSection">
+        <h3>Sample Receipt</h3>
+        <div class="sample">
+            <p>Panda Express #1619</p>
+            <p>Rosemead, CA</p>
+            <p>(626) 799-9898</p>
+        </div>
+    </section>
+</body>
+</html>
